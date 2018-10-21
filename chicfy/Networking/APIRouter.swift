@@ -11,7 +11,7 @@ import Alamofire
 
 enum APIRouter {
     case fetchPosts()
-    case fetchComments(postId: String)
+    case fetchComments(postId: Int)
     
     //MARK: - HTTPMethod
     var method: HTTPMethod {

@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -75,6 +76,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="Sxl-Yq-J05"/>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="8fC-7b-FoG" id="RIJ-95-NpF"/>
                     </connections>
@@ -82,6 +84,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xA-M6-FrK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-453" y="35"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="aj1-qU-mYR">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="GXr-Qm-Z0X" customClass="DetailViewController" customModule="chicfy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PPq-bx-nUq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAi-7O-C3q">
+                                <rect key="frame" x="166" y="80" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Mfr-MQ-eFj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhn-IL-zdk">
+                                <rect key="frame" x="23" y="138" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="kHN-nh-0Ca"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zhn-IL-zdk" firstAttribute="top" secondItem="ZAi-7O-C3q" secondAttribute="bottom" constant="37" id="9mV-8l-Gpu"/>
+                            <constraint firstItem="ZAi-7O-C3q" firstAttribute="centerX" secondItem="2Dd-Ht-zJg" secondAttribute="centerX" id="R8b-oj-PON"/>
+                            <constraint firstItem="ZAi-7O-C3q" firstAttribute="top" secondItem="2Dd-Ht-zJg" secondAttribute="top" constant="16" id="Tbq-In-2r9"/>
+                            <constraint firstItem="ZAi-7O-C3q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2Dd-Ht-zJg" secondAttribute="leading" constant="10" id="Zzj-WZ-sef"/>
+                            <constraint firstItem="zhn-IL-zdk" firstAttribute="leading" secondItem="2Dd-Ht-zJg" secondAttribute="leading" constant="23" id="avL-Gm-66h"/>
+                            <constraint firstItem="2Dd-Ht-zJg" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zhn-IL-zdk" secondAttribute="trailing" constant="20" id="noj-6s-rfF"/>
+                            <constraint firstItem="2Dd-Ht-zJg" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZAi-7O-C3q" secondAttribute="trailing" constant="10" id="ypP-jV-lUP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Dd-Ht-zJg"/>
+                    </view>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="descriptionPost" destination="zhn-IL-zdk" id="Fl4-vZ-tif"/>
+                        <outlet property="titlePost" destination="ZAi-7O-C3q" id="I2v-Hf-uG4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQ8-AJ-wnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288.80000000000001" y="34.632683658170919"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zcY-rQ-lv1">

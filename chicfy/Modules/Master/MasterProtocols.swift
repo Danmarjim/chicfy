@@ -17,7 +17,7 @@ protocol MasterViewBehaviorProtocol {
 
 protocol MasterViewProtocol {
     func updateTableView()
-//    func postMasterDidSelect()
+    func postMasterDidSelect(model: MasterCellModel)
 }
 
 protocol MasterInteractorBehaviorProtocol {
@@ -38,5 +38,5 @@ protocol MasterPresenterBehaviorProtocol {
 
 protocol MasterWireframeBehaviorProtocol {
     static func setupModule() -> UIViewController?
-//    func navigateToDetailModule(from view: MasterViewBehaviorProtocol, model: ImageCollectionCellModel)
+    func navigateToDetailModule(from view: MasterViewBehaviorProtocol, model: MasterCellModel)
 }

@@ -9,6 +9,8 @@
 import Foundation
 
 struct MasterCellModel {
+    var postId: Int
     var title: String
     var body: String
+    var comments: [Comment]?
 }

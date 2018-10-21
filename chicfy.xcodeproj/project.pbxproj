@@ -26,6 +26,12 @@
 		86ED989E217CF6DC00B3C161 /* MasterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED9898217CF6DC00B3C161 /* MasterProtocols.swift */; };
 		86ED989F217CF6DC00B3C161 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED9899217CF6DC00B3C161 /* MasterViewController.swift */; };
 		86ED98A0217CF6DC00B3C161 /* MasterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED989A217CF6DC00B3C161 /* MasterInteractor.swift */; };
+		86ED98A2217D0F7C00B3C161 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED98A1217D0F7C00B3C161 /* DetailViewController.swift */; };
+		86ED98A4217D12CE00B3C161 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED98A3217D12CE00B3C161 /* DetailModel.swift */; };
+		86ED98A6217D176B00B3C161 /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED98A5217D176B00B3C161 /* DetailProtocols.swift */; };
+		86ED98A8217D183E00B3C161 /* DetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED98A7217D183E00B3C161 /* DetailWireframe.swift */; };
+		86ED98AA217D193600B3C161 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED98A9217D193600B3C161 /* DetailInteractor.swift */; };
+		86ED98AC217D199300B3C161 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED98AB217D199300B3C161 /* DetailPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +56,12 @@
 		86ED9898217CF6DC00B3C161 /* MasterProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterProtocols.swift; sourceTree = "<group>"; };
 		86ED9899217CF6DC00B3C161 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		86ED989A217CF6DC00B3C161 /* MasterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterInteractor.swift; sourceTree = "<group>"; };
+		86ED98A1217D0F7C00B3C161 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		86ED98A3217D12CE00B3C161 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		86ED98A5217D176B00B3C161 /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
+		86ED98A7217D183E00B3C161 /* DetailWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWireframe.swift; sourceTree = "<group>"; };
+		86ED98A9217D193600B3C161 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		86ED98AB217D199300B3C161 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		D4E4AB39FD72340509273235 /* Pods-chicfy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chicfy.release.xcconfig"; path = "Pods/Target Support Files/Pods-chicfy/Pods-chicfy.release.xcconfig"; sourceTree = "<group>"; };
 		DEBA3DD3EE3305998B871C39 /* Pods_chicfy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chicfy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -158,6 +170,12 @@
 		86ED9893217CF6DB00B3C161 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				86ED98A3217D12CE00B3C161 /* DetailModel.swift */,
+				86ED98A5217D176B00B3C161 /* DetailProtocols.swift */,
+				86ED98A7217D183E00B3C161 /* DetailWireframe.swift */,
+				86ED98A9217D193600B3C161 /* DetailInteractor.swift */,
+				86ED98AB217D199300B3C161 /* DetailPresenter.swift */,
+				86ED98A1217D0F7C00B3C161 /* DetailViewController.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -165,12 +183,12 @@
 		86ED9894217CF6DC00B3C161 /* Master */ = {
 			isa = PBXGroup;
 			children = (
-				86ED9895217CF6DC00B3C161 /* MasterWireframe.swift */,
-				86ED9896217CF6DC00B3C161 /* MasterPresenter.swift */,
 				86ED9897217CF6DC00B3C161 /* MasterModel.swift */,
 				86ED9898217CF6DC00B3C161 /* MasterProtocols.swift */,
-				86ED9899217CF6DC00B3C161 /* MasterViewController.swift */,
+				86ED9895217CF6DC00B3C161 /* MasterWireframe.swift */,
 				86ED989A217CF6DC00B3C161 /* MasterInteractor.swift */,
+				86ED9896217CF6DC00B3C161 /* MasterPresenter.swift */,
+				86ED9899217CF6DC00B3C161 /* MasterViewController.swift */,
 			);
 			path = Master;
 			sourceTree = "<group>";
@@ -303,13 +321,19 @@
 				86ED9886217CE1A600B3C161 /* MasterCellModel.swift in Sources */,
 				86ED98A0217CF6DC00B3C161 /* MasterInteractor.swift in Sources */,
 				86ED989E217CF6DC00B3C161 /* MasterProtocols.swift in Sources */,
+				86ED98A4217D12CE00B3C161 /* DetailModel.swift in Sources */,
 				86ED987A217CBD2D00B3C161 /* APIRouter.swift in Sources */,
+				86ED98A6217D176B00B3C161 /* DetailProtocols.swift in Sources */,
 				8627D07F217CB2FB009919E9 /* AppDelegate.swift in Sources */,
+				86ED98AC217D199300B3C161 /* DetailPresenter.swift in Sources */,
+				86ED98AA217D193600B3C161 /* DetailInteractor.swift in Sources */,
 				86ED9876217CBB5100B3C161 /* APIConstants.swift in Sources */,
+				86ED98A8217D183E00B3C161 /* DetailWireframe.swift in Sources */,
 				86ED989F217CF6DC00B3C161 /* MasterViewController.swift in Sources */,
 				86ED989C217CF6DC00B3C161 /* MasterPresenter.swift in Sources */,
 				86ED989B217CF6DC00B3C161 /* MasterWireframe.swift in Sources */,
 				86ED9878217CBC2100B3C161 /* APIClient.swift in Sources */,
+				86ED98A2217D0F7C00B3C161 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

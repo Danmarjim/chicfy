@@ -19,28 +19,17 @@ extension MasterPresenter: MasterViewProtocol {
         interactor?.requestPosts()
     }
     
-//    func imageCollectionDidSelect(model: ImageCollectionCellModel) {
-//        guard let view = view else { return }
-//
-//        wireFrame?.navigateToImageCollectionDetailModule(from: view, model: model)
-//    }
+    func postMasterDidSelect(model: MasterCellModel) {
+        guard let view = view else { return }
+
+        wireFrame?.navigateToDetailModule(from: view, model: model)
+    }
 }
 
 extension MasterPresenter: MasterInteractorProtocol {
     func fetchPosts(response: [MasterCellModel]?, error: Error?) {
-        guard let response = response else {
-//            guard let view = view else { return }
-//            //If the error is controlled.
-//            if let error = error {
-//                let issuesControlModel = IssuesControlModel(title: "imageCollection", buttonHidden: false, buttonTitle: "Retry", subtitle: error.localizedDescription)
-//                wireFrame?.presentIssuesControlModule(from: view, model: issuesControlModel)
-//            } else {
-//                // Else we put a generic message in the error.
-//                let issuesControlModel = IssuesControlModel(title: "imageCollection", buttonHidden: false, buttonTitle: "Retry", subtitle: "Something was wrong")
-//                wireFrame?.presentIssuesControlModule(from: view, model: issuesControlModel)
-//            }
-            return
-        }
+        guard let response = response else { return }
+        
         view?.viewDidReceiveUpdates(model: response)
     }
 }

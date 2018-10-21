@@ -33,5 +33,11 @@ final class MasterWireframe {
 }
 
 extension MasterWireframe: MasterWireframeBehaviorProtocol {
-    
+    func navigateToDetailModule(from view: MasterViewBehaviorProtocol, model: MasterCellModel) {
+        guard let detailViewController = DetailWireframe.setupModule(detailModel: model) else { return }
+        
+        if let sourceViewController = view as? UIViewController {
+            sourceViewController.navigationController?.pushViewController(detailViewController, animated: true)
+        }
+    }
 }

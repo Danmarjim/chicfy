@@ -13,8 +13,6 @@ final class MasterViewController: UITableViewController {
     fileprivate var masterCellModel: [MasterCellModel]?
     private let kRowHeight: CGFloat = 80
     
-    // MARK: - UIViewController
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,15 +46,11 @@ extension MasterViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MasterCell", for: indexPath) as? MasterCell else { return UITableViewCell() }
         
-        // Setup MasterCell with data received from the presenter.
         if let masterCellModel = masterCellModel {
             cell.title.text = masterCellModel[indexPath.row].title
             cell.title.font = Style.fontTitlePost
             
-            if masterCellModel[indexPath.row].body.count >= 80 {
-                
-            }
-            
+            cell.body.text = masterCellModel[indexPath.row].body
             cell.body.font = Style.fontDescriptionPost
         }
         
@@ -65,5 +59,13 @@ extension MasterViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension MasterViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let masterCellModel = masterCellModel else { return }
+        presenter?.postMasterDidSelect(model: masterCellModel[indexPath.row])
     }
 }

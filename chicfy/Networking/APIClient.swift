@@ -26,4 +26,19 @@ final class APIClient {
             }
         }
     }
+    
+    func fetchComments(postId: Int, completion: @escaping (_ entity: ([Comment]?), _ error: Error?) -> Void) {
+        sessionManager.request(APIRouter.fetchComments(postId: postId).asURLString()).validate().responseData { response in
+            switch response.result {
+            case .success:
+                if let jsonData = response.result.value {
+                    let jsonDecoder = JSONDecoder()
+                    guard let data = try? jsonDecoder.decode([Comment].self, from: jsonData) else { return }
+                    completion(data, nil)
+                }
+            case .failure(let error):
+                completion(nil, error)
+            }
+        }
+    }
 }
