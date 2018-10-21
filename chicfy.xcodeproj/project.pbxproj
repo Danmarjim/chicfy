@@ -7,21 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BA9740F1F3E2BF0E22CDB90 /* Pods_chicfy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBA3DD3EE3305998B871C39 /* Pods_chicfy.framework */; };
 		8627D07F217CB2FB009919E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8627D07E217CB2FB009919E9 /* AppDelegate.swift */; };
-		8627D081217CB2FB009919E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8627D080217CB2FB009919E9 /* ViewController.swift */; };
 		8627D084217CB2FB009919E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8627D082217CB2FB009919E9 /* Main.storyboard */; };
 		8627D086217CB2FB009919E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8627D085217CB2FB009919E9 /* Assets.xcassets */; };
 		8627D089217CB2FB009919E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8627D087217CB2FB009919E9 /* LaunchScreen.storyboard */; };
+		86ED9876217CBB5100B3C161 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED9875217CBB5100B3C161 /* APIConstants.swift */; };
+		86ED9878217CBC2100B3C161 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED9877217CBC2100B3C161 /* APIClient.swift */; };
+		86ED987A217CBD2D00B3C161 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED9879217CBD2D00B3C161 /* APIRouter.swift */; };
+		86ED9886217CE1A600B3C161 /* MasterCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED9885217CE1A600B3C161 /* MasterCellModel.swift */; };
+		86ED9888217CE27700B3C161 /* MasterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED9887217CE27700B3C161 /* MasterCell.swift */; };
+		86ED9890217CED5700B3C161 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED988C217CED5700B3C161 /* Style.swift */; };
+		86ED9891217CED5700B3C161 /* rondalo-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86ED988E217CED5700B3C161 /* rondalo-regular.ttf */; };
+		86ED9892217CED5700B3C161 /* OCR-b.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86ED988F217CED5700B3C161 /* OCR-b.ttf */; };
+		86ED989B217CF6DC00B3C161 /* MasterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED9895217CF6DC00B3C161 /* MasterWireframe.swift */; };
+		86ED989C217CF6DC00B3C161 /* MasterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED9896217CF6DC00B3C161 /* MasterPresenter.swift */; };
+		86ED989D217CF6DC00B3C161 /* MasterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED9897217CF6DC00B3C161 /* MasterModel.swift */; };
+		86ED989E217CF6DC00B3C161 /* MasterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED9898217CF6DC00B3C161 /* MasterProtocols.swift */; };
+		86ED989F217CF6DC00B3C161 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED9899217CF6DC00B3C161 /* MasterViewController.swift */; };
+		86ED98A0217CF6DC00B3C161 /* MasterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ED989A217CF6DC00B3C161 /* MasterInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12EAEDB4F30C303FE31B74D0 /* Pods-chicfy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chicfy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chicfy/Pods-chicfy.debug.xcconfig"; sourceTree = "<group>"; };
 		8627D07B217CB2FB009919E9 /* chicfy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chicfy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8627D07E217CB2FB009919E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8627D080217CB2FB009919E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8627D083217CB2FB009919E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8627D085217CB2FB009919E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8627D088217CB2FB009919E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8627D08A217CB2FB009919E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86ED9875217CBB5100B3C161 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		86ED9877217CBC2100B3C161 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		86ED9879217CBD2D00B3C161 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		86ED9885217CE1A600B3C161 /* MasterCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterCellModel.swift; sourceTree = "<group>"; };
+		86ED9887217CE27700B3C161 /* MasterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterCell.swift; sourceTree = "<group>"; };
+		86ED988C217CED5700B3C161 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		86ED988E217CED5700B3C161 /* rondalo-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rondalo-regular.ttf"; sourceTree = "<group>"; };
+		86ED988F217CED5700B3C161 /* OCR-b.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OCR-b.ttf"; sourceTree = "<group>"; };
+		86ED9895217CF6DC00B3C161 /* MasterWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterWireframe.swift; sourceTree = "<group>"; };
+		86ED9896217CF6DC00B3C161 /* MasterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterPresenter.swift; sourceTree = "<group>"; };
+		86ED9897217CF6DC00B3C161 /* MasterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterModel.swift; sourceTree = "<group>"; };
+		86ED9898217CF6DC00B3C161 /* MasterProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterProtocols.swift; sourceTree = "<group>"; };
+		86ED9899217CF6DC00B3C161 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		86ED989A217CF6DC00B3C161 /* MasterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterInteractor.swift; sourceTree = "<group>"; };
+		D4E4AB39FD72340509273235 /* Pods-chicfy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chicfy.release.xcconfig"; path = "Pods/Target Support Files/Pods-chicfy/Pods-chicfy.release.xcconfig"; sourceTree = "<group>"; };
+		DEBA3DD3EE3305998B871C39 /* Pods_chicfy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chicfy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +59,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA9740F1F3E2BF0E22CDB90 /* Pods_chicfy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C0CF3378668A1F4D9B4CA1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12EAEDB4F30C303FE31B74D0 /* Pods-chicfy.debug.xcconfig */,
+				D4E4AB39FD72340509273235 /* Pods-chicfy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8627D072217CB2FB009919E9 = {
 			isa = PBXGroup;
 			children = (
 				8627D07D217CB2FB009919E9 /* chicfy */,
 				8627D07C217CB2FB009919E9 /* Products */,
+				2C0CF3378668A1F4D9B4CA1B /* Pods */,
+				F0F7D04068DE4A540D141EED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +96,91 @@
 		8627D07D217CB2FB009919E9 /* chicfy */ = {
 			isa = PBXGroup;
 			children = (
+				86ED988B217CED2500B3C161 /* Util */,
+				86ED9873217CB93B00B3C161 /* Components */,
+				86ED9872217CB89800B3C161 /* Modules */,
+				86ED9874217CB93B00B3C161 /* Networking */,
 				8627D07E217CB2FB009919E9 /* AppDelegate.swift */,
-				8627D080217CB2FB009919E9 /* ViewController.swift */,
 				8627D082217CB2FB009919E9 /* Main.storyboard */,
 				8627D085217CB2FB009919E9 /* Assets.xcassets */,
 				8627D087217CB2FB009919E9 /* LaunchScreen.storyboard */,
 				8627D08A217CB2FB009919E9 /* Info.plist */,
 			);
 			path = chicfy;
+			sourceTree = "<group>";
+		};
+		86ED9872217CB89800B3C161 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				86ED9893217CF6DB00B3C161 /* Detail */,
+				86ED9894217CF6DC00B3C161 /* Master */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		86ED9873217CB93B00B3C161 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				86ED9885217CE1A600B3C161 /* MasterCellModel.swift */,
+				86ED9887217CE27700B3C161 /* MasterCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		86ED9874217CB93B00B3C161 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				86ED9875217CBB5100B3C161 /* APIConstants.swift */,
+				86ED9879217CBD2D00B3C161 /* APIRouter.swift */,
+				86ED9877217CBC2100B3C161 /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		86ED988B217CED2500B3C161 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				86ED988D217CED5700B3C161 /* Fonts */,
+				86ED988C217CED5700B3C161 /* Style.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		86ED988D217CED5700B3C161 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				86ED988E217CED5700B3C161 /* rondalo-regular.ttf */,
+				86ED988F217CED5700B3C161 /* OCR-b.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		86ED9893217CF6DB00B3C161 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		86ED9894217CF6DC00B3C161 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				86ED9895217CF6DC00B3C161 /* MasterWireframe.swift */,
+				86ED9896217CF6DC00B3C161 /* MasterPresenter.swift */,
+				86ED9897217CF6DC00B3C161 /* MasterModel.swift */,
+				86ED9898217CF6DC00B3C161 /* MasterProtocols.swift */,
+				86ED9899217CF6DC00B3C161 /* MasterViewController.swift */,
+				86ED989A217CF6DC00B3C161 /* MasterInteractor.swift */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		F0F7D04068DE4A540D141EED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEBA3DD3EE3305998B871C39 /* Pods_chicfy.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8627D08D217CB2FB009919E9 /* Build configuration list for PBXNativeTarget "chicfy" */;
 			buildPhases = (
+				8A64454154ACA785D1B87BC8 /* [CP] Check Pods Manifest.lock */,
 				8627D077217CB2FB009919E9 /* Sources */,
 				8627D078217CB2FB009919E9 /* Frameworks */,
 				8627D079217CB2FB009919E9 /* Resources */,
+				E248604E9F095EAA74D89A15 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,7 +243,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86ED9892217CED5700B3C161 /* OCR-b.ttf in Resources */,
 				8627D089217CB2FB009919E9 /* LaunchScreen.storyboard in Resources */,
+				86ED9891217CED5700B3C161 /* rondalo-regular.ttf in Resources */,
 				8627D086217CB2FB009919E9 /* Assets.xcassets in Resources */,
 				8627D084217CB2FB009919E9 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +253,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8A64454154ACA785D1B87BC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chicfy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E248604E9F095EAA74D89A15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-chicfy/Pods-chicfy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chicfy/Pods-chicfy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8627D077217CB2FB009919E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8627D081217CB2FB009919E9 /* ViewController.swift in Sources */,
+				86ED9888217CE27700B3C161 /* MasterCell.swift in Sources */,
+				86ED989D217CF6DC00B3C161 /* MasterModel.swift in Sources */,
+				86ED9890217CED5700B3C161 /* Style.swift in Sources */,
+				86ED9886217CE1A600B3C161 /* MasterCellModel.swift in Sources */,
+				86ED98A0217CF6DC00B3C161 /* MasterInteractor.swift in Sources */,
+				86ED989E217CF6DC00B3C161 /* MasterProtocols.swift in Sources */,
+				86ED987A217CBD2D00B3C161 /* APIRouter.swift in Sources */,
 				8627D07F217CB2FB009919E9 /* AppDelegate.swift in Sources */,
+				86ED9876217CBB5100B3C161 /* APIConstants.swift in Sources */,
+				86ED989F217CF6DC00B3C161 /* MasterViewController.swift in Sources */,
+				86ED989C217CF6DC00B3C161 /* MasterPresenter.swift in Sources */,
+				86ED989B217CF6DC00B3C161 /* MasterWireframe.swift in Sources */,
+				86ED9878217CBC2100B3C161 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +451,7 @@
 		};
 		8627D08E217CB2FB009919E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12EAEDB4F30C303FE31B74D0 /* Pods-chicfy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +470,7 @@
 		};
 		8627D08F217CB2FB009919E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4E4AB39FD72340509273235 /* Pods-chicfy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
