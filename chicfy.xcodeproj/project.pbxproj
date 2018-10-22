@@ -124,6 +124,7 @@
 		86ED9872217CB89800B3C161 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				86FB3B71217E576400FF5DC8 /* Comment */,
 				86ED9893217CF6DB00B3C161 /* Detail */,
 				86ED9894217CF6DC00B3C161 /* Master */,
 			);
@@ -191,6 +192,13 @@
 				86ED9899217CF6DC00B3C161 /* MasterViewController.swift */,
 			);
 			path = Master;
+			sourceTree = "<group>";
+		};
+		86FB3B71217E576400FF5DC8 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Comment;
 			sourceTree = "<group>";
 		};
 		F0F7D04068DE4A540D141EED /* Frameworks */ = {

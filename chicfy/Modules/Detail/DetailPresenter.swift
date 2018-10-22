@@ -19,8 +19,8 @@ final class DetailPresenter: DetailPresenterBehaviorProtocol {
 extension DetailPresenter: DetailViewProtocol {
     func updateView() {
         guard let detailModel = detailModel else { return }
-        
-        interactor?.requestComments(postId: detailModel.postId)
+
+        interactor?.requestComments(model: detailModel)
     }
 }
 

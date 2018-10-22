@@ -12,6 +12,7 @@ import Alamofire
 enum APIRouter {
     case fetchPosts()
     case fetchComments(postId: Int)
+    case addComment()
     
     //MARK: - HTTPMethod
     var method: HTTPMethod {
@@ -20,6 +21,8 @@ enum APIRouter {
             return .get
         case .fetchComments:
             return .get
+        case .addComment():
+            return .post
         }
     }
     
@@ -30,6 +33,8 @@ enum APIRouter {
             return "/posts/"
         case .fetchComments(let postId):
             return "/comments?postId=\(postId)"
+        case .addComment():
+            return "/comments"
         }
     }
     

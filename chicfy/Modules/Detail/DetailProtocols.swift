@@ -22,7 +22,7 @@ protocol DetailViewProtocol {
 protocol DetailInteractorBehaviorProtocol {
     var presenter: DetailInteractorProtocol? { get set }
     
-    func requestComments(postId: Int)
+    func requestComments(model: MasterCellModel)
 }
 
 protocol DetailInteractorProtocol {

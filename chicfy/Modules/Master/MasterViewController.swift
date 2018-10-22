@@ -16,8 +16,13 @@ final class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupLayout()
         setupTableView()
         presenter?.updateTableView()
+    }
+    
+    private func setupLayout() {
+        title = "Master"
     }
     
     private func setupTableView() {

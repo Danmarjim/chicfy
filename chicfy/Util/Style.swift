@@ -10,6 +10,6 @@ import Foundation
 import UIKit
 
 struct Style {
-    static var fontTitlePost = UIFont(name: "Rondalo", size: 18)
-    static var fontDescriptionPost = UIFont(name: "OCRB10PitchBT-Regular", size: 24)
+    static var fontTitlePost = UIFont(name: "Rondalo", size: 20)
+    static var fontDescriptionPost = UIFont(name: "OCRB10PitchBT-Regular", size: 15)
 }

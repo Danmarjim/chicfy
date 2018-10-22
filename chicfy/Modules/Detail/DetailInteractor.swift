@@ -16,13 +16,13 @@ final class DetailInteractor {
 }
 
 extension DetailInteractor: DetailInteractorBehaviorProtocol {
-    func requestComments(postId: Int) {
-        apiClient.fetchComments(postId: postId) { response, error in
+    func requestComments(model: MasterCellModel) {
+        apiClient.fetchComments(postId: model.postId) { response, error in
             if error == nil {
                 if let elements = response?.count {
                     if elements > 0 {
                         self.commentModel = response
-                        let model = self.parsedDataModel()
+                        let model = self.parsedDataModel(fromModel: model)
                         self.presenter?.fetchComments(response: model, error: nil)
                     } else {
                         self.presenter?.fetchComments(response: nil, error: nil)
@@ -34,7 +34,17 @@ extension DetailInteractor: DetailInteractorBehaviorProtocol {
         }
     }
     
-    func parsedDataModel() -> MasterCellModel {
-        return MasterCellModel(postId: 1, title: "Test", body: "Test", comments: commentModel)
+    func addComment() {
+        apiClient.addComment { error in
+            if error == nil {
+                //
+            } else {
+                //self.presenter.a
+            }
+        }
+    }
+    
+    func parsedDataModel(fromModel: MasterCellModel) -> MasterCellModel {
+        return MasterCellModel(postId: fromModel.postId, title: fromModel.title, body: fromModel.body, comments: commentModel)
     }
 }

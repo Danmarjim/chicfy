@@ -37,8 +37,8 @@ extension MasterInteractor: MasterInteractorBehaviorProtocol {
     func parsedDataModel() -> [MasterCellModel] {
         var mappedModel = [MasterCellModel]()
         if let postModel = postModel {
-            for item in postModel {
-                mappedModel.append(MasterCellModel(postId: item.postId, title: item.title, body: item.body, comments: nil))
+            mappedModel = postModel.map {
+                return MasterCellModel(postId: $0.postId, title: "\($0.title)", body: "\($0.body)", comments: nil)
             }
         }
         return mappedModel
