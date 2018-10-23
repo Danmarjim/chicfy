@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//"View": This layer "print" data from presenter and ask to presenter what to do related with user's inputs.
 final class DetailViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titlePost: UILabel!

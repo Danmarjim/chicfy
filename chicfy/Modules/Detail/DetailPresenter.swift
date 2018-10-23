@@ -8,6 +8,7 @@
 
 import Foundation
 
+//"Presenter": It contains the logic that the view has to present 
 final class DetailPresenter: DetailPresenterBehaviorProtocol {
     var view: DetailViewBehaviorProtocol?
     var interactor: DetailInteractorBehaviorProtocol?

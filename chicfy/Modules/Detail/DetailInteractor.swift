@@ -8,6 +8,7 @@
 
 import Foundation
 
+//"Interactor": It contains the business logic. 
 final class DetailInteractor {
     var presenter: DetailInteractorProtocol?
     

@@ -8,6 +8,7 @@
 
 import Foundation
 
+//"Presenter": It contains the logic that the view has to present 
 final class MasterPresenter: MasterPresenterBehaviorProtocol {
     var view: MasterViewBehaviorProtocol?
     var interactor: MasterInteractorBehaviorProtocol?

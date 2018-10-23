@@ -8,6 +8,7 @@
 
 import Foundation
 
+//Defines Master UI's content
 struct Post: Decodable {
     let userId: Int
     let postId: Int

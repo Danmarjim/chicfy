@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//"Wireframe": It contains all the navigation of the app
 final class MasterWireframe {
     static func setupModule() -> UIViewController? {
         let navigationController = mainStoryboard.instantiateViewController(withIdentifier: "NavigationController")

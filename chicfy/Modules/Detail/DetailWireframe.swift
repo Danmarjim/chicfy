@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//"Wireframe": It contains all the navigation of the app
 final class DetailWireframe: DetailWireframeBehaviorProtocol {
     static func setupModule(detailModel: ChicfyCellModel) -> UIViewController? {
         guard let view = mainStoryboard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else { return nil }

@@ -8,6 +8,7 @@
 
 import UIKit
 
+//"View": This layer "print" data from presenter and ask to presenter what to do related with user's inputs.
 final class MasterViewController: UITableViewController {
     var presenter: MasterViewProtocol?
     fileprivate var chicfyCellModel: [ChicfyCellModel]?
@@ -33,6 +34,9 @@ final class MasterViewController: UITableViewController {
 
 extension MasterViewController: MasterViewBehaviorProtocol {
     func viewDidReceiveUpdates(model: [ChicfyCellModel]) {
+        //Presenter has updated to be loaded
+        //
+        // - model: A model to feed table view
         chicfyCellModel = model
         tableView.reloadData()
     }
@@ -55,7 +59,10 @@ extension MasterViewController {
             cell.title.text = chicfyCellModel[indexPath.row].title
             cell.title.font = Style.fontTitlePost
             
-            cell.body.text = chicfyCellModel[indexPath.row].body
+            //Show first 80 char and append ...
+            let body = chicfyCellModel[indexPath.row].body
+
+            cell.body.text = body.prefix(80) + "..."
             cell.body.font = Style.fontDescriptionPost
         }
         
