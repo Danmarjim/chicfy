@@ -1,5 +1,5 @@
 //
-//  MasterCellModel.swift
+//  ChicfyCellModel.swift
 //  chicfy
 //
 //  Created by Daniel Martin Jimenez on 21/10/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct MasterCellModel {
+struct ChicfyCellModel {
     var postId: Int
     var title: String
     var body: String

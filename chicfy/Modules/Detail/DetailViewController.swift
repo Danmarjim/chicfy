@@ -17,7 +17,7 @@ final class DetailViewController: UIViewController {
     @IBOutlet weak var addCommentButton: UIButton!
     
     var presenter: DetailViewProtocol?
-    fileprivate var masterCellModel: MasterCellModel?
+    fileprivate var chicfyCellModel: ChicfyCellModel?
     private let kRowHeight: CGFloat = 80
     
     override func viewDidLoad() {
@@ -30,6 +30,8 @@ final class DetailViewController: UIViewController {
     
     private func setupLayout() {
         title = "Detail"
+        commentLabel.text = "Comentarios"
+        
         titlePost.font = Style.fontTitlePost
         descriptionPost.font = Style.fontDescriptionPost
     }
@@ -40,17 +42,16 @@ final class DetailViewController: UIViewController {
     }
     
     @IBAction func controlButtonDidTap(_ sender: Any) {
-        //presenter?.addCommentButtonDidTap()
+        presenter?.addCommentButtonDidTap()
     }
 }
 
 extension DetailViewController: DetailViewBehaviorProtocol {
-    func viewDidReceiveUpdates(model: MasterCellModel) {
+    func viewDidReceiveUpdates(model: ChicfyCellModel) {
         titlePost.text = model.title
         descriptionPost.text = model.body
-        commentLabel.text = "Comentarios"
         
-        masterCellModel = model
+        chicfyCellModel = model
         tableView.reloadData()
     }
 }
@@ -62,7 +63,7 @@ extension DetailViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let comments = masterCellModel?.comments {
+        if let comments = chicfyCellModel?.comments {
             return comments.count
         } else {
             return 0
@@ -70,9 +71,9 @@ extension DetailViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MasterCell", for: indexPath) as? MasterCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ChicfyCell", for: indexPath) as? ChicfyCell else { return UITableViewCell() }
 
-        if let masterCellModel = masterCellModel, let comments = masterCellModel.comments {
+        if let chicfyCellModel = chicfyCellModel, let comments = chicfyCellModel.comments {
             cell.title.text = comments[indexPath.row].name
             cell.title.font = Style.fontTitlePost
 

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 final class DetailWireframe: DetailWireframeBehaviorProtocol {
-    static func setupModule(detailModel: MasterCellModel) -> UIViewController? {
+    static func setupModule(detailModel: ChicfyCellModel) -> UIViewController? {
         guard let view = mainStoryboard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else { return nil }
         
         var presenter: DetailPresenterBehaviorProtocol & DetailViewProtocol & DetailInteractorProtocol = DetailPresenter()

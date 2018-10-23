@@ -12,12 +12,12 @@ import UIKit
 protocol MasterViewBehaviorProtocol {
     var presenter: MasterViewProtocol? { get set }
     
-    func viewDidReceiveUpdates(model: [MasterCellModel])
+    func viewDidReceiveUpdates(model: [ChicfyCellModel])
 }
 
 protocol MasterViewProtocol {
     func updateTableView()
-    func postMasterDidSelect(model: MasterCellModel)
+    func postMasterDidSelect(model: ChicfyCellModel)
 }
 
 protocol MasterInteractorBehaviorProtocol {
@@ -27,7 +27,7 @@ protocol MasterInteractorBehaviorProtocol {
 }
 
 protocol MasterInteractorProtocol {
-    func fetchPosts(response: [MasterCellModel]?, error: Error?)
+    func fetchPosts(response: [ChicfyCellModel]?, error: Error?)
 }
 
 protocol MasterPresenterBehaviorProtocol {
@@ -38,5 +38,5 @@ protocol MasterPresenterBehaviorProtocol {
 
 protocol MasterWireframeBehaviorProtocol {
     static func setupModule() -> UIViewController?
-    func navigateToDetailModule(from view: MasterViewBehaviorProtocol, model: MasterCellModel)
+    func navigateToDetailModule(from view: MasterViewBehaviorProtocol, model: ChicfyCellModel)
 }

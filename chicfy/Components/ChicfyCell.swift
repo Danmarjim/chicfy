@@ -1,5 +1,5 @@
 //
-//  MasterCell.swift
+//  ChicfyCell.swift
 //  chicfy
 //
 //  Created by Daniel Martin Jimenez on 21/10/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MasterCell: UITableViewCell {
+class ChicfyCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var body: UILabel!
 }

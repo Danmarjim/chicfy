@@ -33,7 +33,7 @@ final class MasterWireframe {
 }
 
 extension MasterWireframe: MasterWireframeBehaviorProtocol {
-    func navigateToDetailModule(from view: MasterViewBehaviorProtocol, model: MasterCellModel) {
+    func navigateToDetailModule(from view: MasterViewBehaviorProtocol, model: ChicfyCellModel) {
         guard let detailViewController = DetailWireframe.setupModule(detailModel: model) else { return }
         
         if let sourceViewController = view as? UIViewController {

@@ -34,11 +34,11 @@ extension MasterInteractor: MasterInteractorBehaviorProtocol {
         }
     }
     
-    func parsedDataModel() -> [MasterCellModel] {
-        var mappedModel = [MasterCellModel]()
+    func parsedDataModel() -> [ChicfyCellModel] {
+        var mappedModel = [ChicfyCellModel]()
         if let postModel = postModel {
             mappedModel = postModel.map {
-                return MasterCellModel(postId: $0.postId, title: "\($0.title)", body: "\($0.body)", comments: nil)
+                return ChicfyCellModel(postId: $0.postId, title: "\($0.title)", body: "\($0.body)", comments: nil)
             }
         }
         return mappedModel

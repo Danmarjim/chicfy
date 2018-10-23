@@ -10,7 +10,7 @@ import UIKit
 
 final class MasterViewController: UITableViewController {
     var presenter: MasterViewProtocol?
-    fileprivate var masterCellModel: [MasterCellModel]?
+    fileprivate var chicfyCellModel: [ChicfyCellModel]?
     private let kRowHeight: CGFloat = 80
     
     override func viewDidLoad() {
@@ -32,8 +32,8 @@ final class MasterViewController: UITableViewController {
 }
 
 extension MasterViewController: MasterViewBehaviorProtocol {
-    func viewDidReceiveUpdates(model: [MasterCellModel]) {
-        masterCellModel = model
+    func viewDidReceiveUpdates(model: [ChicfyCellModel]) {
+        chicfyCellModel = model
         tableView.reloadData()
     }
 }
@@ -45,17 +45,17 @@ extension MasterViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return masterCellModel?.count ?? 0
+        return chicfyCellModel?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MasterCell", for: indexPath) as? MasterCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ChicfyCell", for: indexPath) as? ChicfyCell else { return UITableViewCell() }
         
-        if let masterCellModel = masterCellModel {
-            cell.title.text = masterCellModel[indexPath.row].title
+        if let chicfyCellModel = chicfyCellModel {
+            cell.title.text = chicfyCellModel[indexPath.row].title
             cell.title.font = Style.fontTitlePost
             
-            cell.body.text = masterCellModel[indexPath.row].body
+            cell.body.text = chicfyCellModel[indexPath.row].body
             cell.body.font = Style.fontDescriptionPost
         }
         
@@ -70,7 +70,7 @@ extension MasterViewController {
 // MARK: - UITableViewDelegate
 extension MasterViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let masterCellModel = masterCellModel else { return }
-        presenter?.postMasterDidSelect(model: masterCellModel[indexPath.row])
+        guard let chicfyCellModel = chicfyCellModel else { return }
+        presenter?.postMasterDidSelect(model: chicfyCellModel[indexPath.row])
     }
 }

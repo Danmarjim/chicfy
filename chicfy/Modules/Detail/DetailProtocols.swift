@@ -12,30 +12,31 @@ import UIKit
 protocol DetailViewBehaviorProtocol {
     var presenter: DetailViewProtocol? { get set }
     
-    func viewDidReceiveUpdates(model: MasterCellModel)
+    func viewDidReceiveUpdates(model: ChicfyCellModel)
 }
 
 protocol DetailViewProtocol {
     func updateView()
+    func addCommentButtonDidTap()
 }
 
 protocol DetailInteractorBehaviorProtocol {
     var presenter: DetailInteractorProtocol? { get set }
     
-    func requestComments(model: MasterCellModel)
+    func requestComments(model: ChicfyCellModel)
 }
 
 protocol DetailInteractorProtocol {
-    func fetchComments(response: MasterCellModel?, error: Error?)
+    func fetchComments(response: ChicfyCellModel?, error: Error?)
 }
 
 protocol DetailPresenterBehaviorProtocol {
     var view: DetailViewBehaviorProtocol? { get set }
     var interactor: DetailInteractorBehaviorProtocol? { get set }
     var wireFrame: DetailWireframeBehaviorProtocol? { get set }
-    var detailModel: MasterCellModel? { get set }
+    var detailModel: ChicfyCellModel? { get set }
 }
 
 protocol DetailWireframeBehaviorProtocol {
-    static func setupModule(detailModel: MasterCellModel) -> UIViewController?
+    static func setupModule(detailModel: ChicfyCellModel) -> UIViewController?
 }

@@ -41,8 +41,4 @@ final class APIClient {
             }
         }
     }
-    
-    func addComment(completion: @escaping (_ error: Error?) -> Void) {
-        
-    }
 }

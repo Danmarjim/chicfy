@@ -19,7 +19,7 @@ extension MasterPresenter: MasterViewProtocol {
         interactor?.requestPosts()
     }
     
-    func postMasterDidSelect(model: MasterCellModel) {
+    func postMasterDidSelect(model: ChicfyCellModel) {
         guard let view = view else { return }
 
         wireFrame?.navigateToDetailModule(from: view, model: model)
@@ -27,7 +27,7 @@ extension MasterPresenter: MasterViewProtocol {
 }
 
 extension MasterPresenter: MasterInteractorProtocol {
-    func fetchPosts(response: [MasterCellModel]?, error: Error?) {
+    func fetchPosts(response: [ChicfyCellModel]?, error: Error?) {
         guard let response = response else { return }
         
         view?.viewDidReceiveUpdates(model: response)
